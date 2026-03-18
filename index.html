@@ -1,924 +1,741 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YAMAHA TOWN NGỌC ANH 5</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Thư Mời Lễ Khai Trương - BYD Thành Công Cà Mau</title>
+  
+  <meta property="og:title" content="Thư Mời Lễ Khai Trương - BYD Thành Công Cà Mau">
+  <meta property="og:description" content="Trân trọng kính mời Quý khách đến tham dự Lễ Khai Trương Showroom 4S BYD Thành Công Cà Mau vào lúc 08:00 sáng, ngày 27.03.2026.">
+  <meta property="og:image" content="https://quangcaoads2025.github.io/thu-moi/lekhaitruongbyd.png?v=final">
+  <meta property="og:url" content="https://thumoi.kmtrend.com/">
+  <meta property="og:type" content="website">
 
-  <style>
-  /* ===== NÚT 🎁 ===== */
-  .popup-toggle-btn {
-    position: fixed;
-    bottom: 10%;
-    left: 0;
-    background-color: #d60000;
-    color: white;
-    font-size: 22px;
-    padding: 10px 14px;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-    z-index: 100000;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    pointer-events: auto;
-  }
+  <meta name="zalo-og:title" content="Thư Mời Lễ Khai Trương - BYD Thành Công Cà Mau">
+  <meta name="zalo-og:description" content="Trân trọng kính mời Quý khách đến tham dự Lễ Khai Trương Showroom 4S BYD Thành Công Cà Mau vào lúc 08:00 sáng, ngày 27.03.2026.">
+  <meta name="zalo-og:image" content="https://quangcaoads2025.github.io/thu-moi/lekhaitruongbyd.png?v=final">
 
-  /* ===== LỚP NỀN POPUP ===== */
-  .popup-widget * { box-sizing: border-box; }
-  .popup-widget {
-    position: fixed;
-    inset: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 99999;
-    font-family: Arial, sans-serif;
-    pointer-events: auto;
-  }
 
-  /* ===== HỘP POPUP CHÍNH ===== */
-  .popup-form {
-    background: #ffffff;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 920px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    pointer-events: auto;
-  }
+  
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-  /* ẢNH NỀN CHÌM CHỈ BÊN TRÁI */
-  .popup-form::before{ content:none !important; }
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  .qcads-left{ position: relative; }
-  .qcads-left::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background: url('https://www.ngocanhcm.vn/data/category/thongtinweb.png') no-repeat left center;
-    background-size: 115%;
-    opacity: 0.12;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .qcads-left > *{ position: relative; z-index: 1; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+        }
 
-  /* ===== LAYOUT 2 CỘT ===== */
-  .qcads-popup-grid{
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-  }
-  .qcads-left{
-    flex: 1 1 56%;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 560px;
-  }
-  .qcads-right{
-    flex: 1 1 44%;
-    min-width: 0;
-    border-left: 1px solid rgba(0,0,0,0.08);
-    padding-left: 18px;
-  }
+        body.locked {
+            overflow: hidden;
+        }
 
-  /* ===== TIÊU ĐỀ + MÔ TẢ ===== */
-  .popup-form h2, .popup-form p {
-    text-align: center;
-    font-weight: 700;
-  }
-  .popup-form h2 { font-size: 18px; color: #222; margin: 0 0 8px; }
-  .popup-form p { font-size: 14px; color: #d62828; margin: 0 0 16px; }
+        .hero-waiting {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,20,60,0.75), rgba(0,20,60,0.9)),
+                        url('https://quangcaoads2025.github.io/thu-moi/bia2.jpg?v=final') center/cover no-repeat;
+            z-index: 9999; 
+            transition: opacity 1s, visibility 1s;
+        }
 
-  /* ===== INPUT ===== */
-  .popup-form input[type="text"], .popup-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: transparent;
-    color: #000;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .popup-form input::placeholder { color: #111; opacity: 1; }
-  .popup-form input[type="checkbox"] { margin-right: 6px; }
-  .popup-form label {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: 6px;
-  }
+        .hero-waiting::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0,120,255,0.3), transparent 70%);
+            mix-blend-mode: screen;
+            pointer-events: none;
+        }
 
-  /* ===== NÚT SUBMIT ===== */
-  .popup-form button {
-    background: red;
-    color: white;
-    padding: 12px 16px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-  }
+        .hero-waiting.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
 
-  /* Hàng nút: trái – phải */
-  .popup-form .form-actions{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-top: 10px;
-  }
-  .popup-form .form-actions #submitBtn{ margin-top: 0; }
-  .popup-form .form-actions .dismiss-link{
-    margin-left: 0;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
-    white-space: nowrap;
-  }
+        .waiting-content {
+            text-align: center;
+            color: #fff;
+            z-index: 2;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 40px 50px;
+            border-radius: 20px;
+            background: rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-  /* ===== NÚT ĐÓNG ===== */
-  .close-btn {
-    position: absolute;
-    top: 12px; right: 16px;
-    cursor: pointer;
-    font-size: 22px;
-    color: #666;
-    z-index: 10;
-    pointer-events: auto;
-  }
+        .waiting-sub {
+            letter-spacing: 4px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
 
-  /* ===== SUCCESS ===== */
-  #successMessage {
-    display: none;
-    text-align: left;
-    margin-top: 20px;
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  #successMessage h3 {
-    color: green;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  #successMessage p { margin: 6px 0; }
-  #successMessage span#couponCode,
-  #successMessage span#wonValue {
-    color: red;
-    font-size: 18px;
-    font-weight: bold;
-  }
+        .waiting-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 40px;
+            margin: 10px 0;
+            text-shadow: 0 5px 20px rgba(0,0,0,0.6);
+            font-weight: 700;
+        }
 
-  /* ===== FOOTER ===== */
-  .site-footer {
-    text-align: center;
-    font-size: 12px;
-    color: #777;
-    padding: 10px 8px;
-    border-top: 1px solid #ddd;
-    margin-top: auto;
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(2px);
-  }
-  .site-footer strong { color: #111; }
+        .waiting-date {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.85;
+        }
 
-  /* ===== GIFT TEXT ===== */
-  .gift-text {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: red;
-    line-height: 1.4;
-    margin: 6px 0 10px 0;
-  }
+        .waiting-guest {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ffd700;
+        }
 
-  /* ===== VÒNG QUAY ===== */
-  #wheelContainer { display: none; margin-top: 10px; text-align: center; }
-  #wheel {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 6px solid #fff;
-    box-shadow: 0 0 25px rgba(255,255,255,0.4), inset 0 0 35px rgba(255,255,255,0.2);
-    transition: transform 5s cubic-bezier(.23,1,.32,1);
-  }
-  .wheel-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-  }
-  .arrow {
-    position: absolute;
-    top: -20px; left: 50%;
-    transform: translateX(-50%);
-    width: 0; height: 0;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 26px solid #ffde59;
-    filter: drop-shadow(0 0 6px #fff);
-    z-index: 15;
-  }
-  .center-button {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90px; height: 90px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #ff007a, #ffde59);
-    border: 4px solid white;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 0 20px #ff007a, 0 0 40px #ffde59, inset 0 0 10px rgba(255,255,255,.5);
-    user-select: none; z-index: 10;
-    transition: all .3s ease;
-  }
-  .center-button:hover {
-    transform: translate(-50%, -50%) scale(1.05);
-    box-shadow: 0 0 25px #ffde59, 0 0 55px #ff007a;
-  }
-  .center-button span { color: white; font-weight: bold; font-size: 14px; }
-  .center-button .pointer {
-    position: absolute; top: 4px; left: 50%;
-    transform: translateX(-50%);
-    width: 0; height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid #fff;
-    filter: drop-shadow(0 0 4px #fff);
-  }
-  #result {
-    margin-top: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #2c3e50;
-    min-height: 28px;
-  }
+        .envelope {
+            margin-top: 40px;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
 
-  /* ===== CỘT PHẢI ===== */
-  .qcads-right-card{
-    background: rgba(255,255,255,0.75);
-    border-radius: 12px;
-    padding: 14px 14px 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  }
-  .qcads-hotline{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom: 10px;
-  }
-  .qcads-hotline .qcads-pill{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding: 10px 12px;
-    border-radius: 999px;
-    background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.07);
-    font-weight: 800;
-  }
-  .qcads-hotline .qcads-pill .qcads-icon{
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    background: #1b5cff;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size: 16px;
-  }
-  .qcads-hotline .qcads-pill .qcads-text{
-    line-height: 1.1;
-    text-align: left;
-    font-size: 12px;
-    font-weight: 800;
-    color:#1a1a1a;
-  }
-  .qcads-hotline .qcads-pill .qcads-text b{
-    display:block;
-    font-size: 16px;
-    letter-spacing: .3px;
-    color:#0a2a7a;
-  }
-  .qcads-right ul{
-    list-style: none;
-    margin: 10px 0 14px;
-    padding: 0;
-  }
-  .qcads-right li{
-    margin: 8px 0;
-    font-size: 15px;
-    font-weight: 700;
-    color:#222;
-    display:flex;
-    gap:8px;
-    align-items:flex-start;
-  }
-  .qcads-right li .dot{
-    width: 18px;
-    flex: 0 0 18px;
-    line-height: 1.2;
-  }
+        .envelope img {
+            width: 260px;
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.7));
+            transition: 0.5s;
+        }
 
-  .qcads-logo{ display:block; padding: 14px 0 8px; }
-  .qcads-logo .logo-box{
-    width: 100%;
-    height: 180px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background: transparent;
-    border: none;
-    padding: 0;
-  }
-  .qcads-logo .logo-box img{
-    display:block;
-    max-width:100%;
-    max-height:100%;
-    width:auto;
-    height:auto;
-    object-fit:contain;
-  }
+        .envelope:hover img {
+            transform: scale(1.05);
+        }
 
-  .qcads-right-hot{
-    position: relative;
-    margin-top: 14px;
-    padding: 14px 12px;
-    border-radius: 14px;
-    text-align: center;
-    font-weight: 900;
-    font-size: 13.5px;
-    line-height: 1.5;
-    color: #d60000;
-    background: linear-gradient(135deg,#fff5f5,#ffffff,#fff5f5);
-    border: 1px dashed rgba(214,0,0,.55);
-    box-shadow: 0 8px 22px rgba(214,0,0,.18), inset 0 0 0 1px rgba(214,0,0,.15);
-    overflow: hidden;
-  }
-  .qcads-right-hot::before{
-    content: "🔥HOT🔥";
-    display: block;
-    margin-bottom: 6px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    animation: qcadsHotBlink 1.4s infinite;
-  }
-  .qcads-right-hot::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-70%;
-    width:60%;
-    height:100%;
-    background: linear-gradient(120deg,transparent,rgba(255,255,255,0.75),transparent);
-    animation: qcadsHotShine 3s infinite;
-  }
-  @keyframes qcadsHotBlink{ 0%,100%{opacity:1} 50%{opacity:.55} }
-  @keyframes qcadsHotShine{ 0%{left:-70%} 100%{left:120%} }
+        .envelope::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+            opacity: 0;
+            transition: 0.3s;
+        }
 
-  /* HIỆU ỨNG QUÀ 🎁 */
-  .qcads-right li .dot{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width: 22px;
-    height: 22px;
-    border-radius: 8px;
-    background: rgba(214,0,0,0.08);
-    box-shadow: 0 0 0 rgba(214,0,0,0);
-    animation: qcadsGiftPulse 1.2s infinite;
-  }
-  .qcads-right li:nth-child(2) .dot{ animation-delay: .15s; }
-  .qcads-right li:nth-child(3) .dot{ animation-delay: .30s; }
-  .qcads-right li:nth-child(4) .dot{ animation-delay: .45s; }
-  .qcads-right li:nth-child(5) .dot{ animation-delay: .60s; }
-  @keyframes qcadsGiftPulse{
-    0%{transform:translateY(0) scale(1); box-shadow:0 0 0 rgba(214,0,0,0)}
-    40%{transform:translateY(-1px) scale(1.08); box-shadow:0 10px 18px rgba(214,0,0,.15)}
-    70%{transform:translateY(0) scale(1.02)}
-    100%{transform:translateY(0) scale(1); box-shadow:0 0 0 rgba(214,0,0,0)}
-  }
+        .envelope:hover::before {
+            opacity: 1;
+        }
 
-  /* ===== THÔNG BÁO CUSTOM (THAY alert) ===== */
-  #qcadsAlert{
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 200000;
-  }
-  .qcads-alert-box{
-    background: #fff;
-    border-radius: 14px;
-    padding: 18px 16px 14px;
-    max-width: 420px;
-    width: 92%;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,.25);
-  }
-  .qcads-alert-box h3{
-    margin: 0 0 8px;
-    font-size: 18px;
-    font-weight: 900;
-    color: #d60000;
-  }
-  .qcads-alert-box p{
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #222;
-  }
-  .qcads-alert-box button{
-    margin-top: 12px;
-    padding: 10px 16px;
-    border-radius: 10px;
-    border: none;
-    background: #d60000;
-    color: #fff;
-    font-weight: 800;
-    cursor: pointer;
-  }
+        .open-text {
+            margin-top: 15px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #ffffffcc;
+            animation: glowText 2s infinite;
+        }
 
-  /* =====================================================
-     FIX CHẮC CHẮN: ẨN CỘT PHẢI TRÊN MOBILE (ĐẶT CUỐI CÙNG)
-     ===================================================== */
-  @media screen and (max-width: 768px){
-    #qcadsPopup .qcads-right,
-    #qcadsPopup .qcads-popup-grid > .qcads-right{
-      display: none !important;
-      width: 0 !important;
-      max-width: 0 !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: 0 !important;
-      overflow: hidden !important;
-    }
-    #qcadsPopup .qcads-popup-grid{
-      display: block !important;
-    }
-    #qcadsPopup .qcads-left{
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-    #qcadsPopup .popup-form{
-      max-width: 92% !important;
-      padding: 16px !important;
-    }
-  }
-  </style>
+        @keyframes glowText {
+            0% { opacity: 0.5; transform: translateY(0); }
+            50% { opacity: 1; transform: translateY(-3px); text-shadow: 0 0 12px rgba(255,255,255,0.8); }
+            100% { opacity: 0.5; transform: translateY(0); }
+        }
+
+        .open-text::after {
+            content: " 👆";
+            display: inline-block;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            50% { transform: translateY(-6px); }
+        }
+
+        .flash {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10000;
+            transition: opacity 0.5s;
+        }
+
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fly 6s linear infinite;
+            z-index: 9998; 
+            pointer-events: none;
+        }
+
+        @keyframes fly {
+            from { transform: translateY(100vh); opacity: 1; }
+            to { transform: translateY(-10vh); opacity: 0; }
+        }
+
+        .main-particle {
+            position: fixed;
+            bottom: -10px;
+            width: 4px;
+            height: 4px;
+            background: #b58500;
+            border-radius: 50%;
+            opacity: 0.5;
+            box-shadow: 0 0 6px #b58500, 0 0 12px #b58500;
+            animation: floatUp 6s linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            20% { opacity: 0.6; }
+            80% { opacity: 0.6; }
+            100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+        }
+
+        :root {
+            --bg-light: #ffffff; 
+            --bg-card: rgba(255, 255, 255, 0.98); 
+            --primary-blue: #004080; 
+            --gold-grad: linear-gradient(135deg, #b58500, #e6c200, #b58500); 
+            --gold-solid: #b58500; 
+            --text-dark: #222222; 
+            --text-muted: #555555;
+            --border-glass: rgba(0, 0, 0, 0.08);
+        }
+
+        .main-invitation {
+            display: none;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .main-invitation.active {
+            display: block;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .main-invitation-inner {
+            background-color: var(--bg-light);
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.01) 10px, rgba(0,0,0,0.01) 20px);
+            padding-bottom: 80px;
+        }
+
+        .text-gold {
+            background: var(--gold-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+
+        .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)), 
+                        url('https://quangcaoads2025.github.io/thu-moi/bia2.jpg?v=final') center/cover fixed;
+        }
+
+        .top-logos {
+            position: absolute;
+            top: 30px; 
+            left: 0;
+            width: 100%;
+            padding: 0 8%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            z-index: 20;
+        }
+
+        .top-logos img {
+            width: auto;
+            object-fit: contain; 
+        }
+
+        .logo-ngocanh-img {
+            height: 100px; 
+            max-width: 250px;
+        }
+
+        .logo-byd-img {
+            height: 60px; 
+            max-width: 250px;
+        }
+
+        .hero-logo {
+            font-size: 1.2rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 1vh;
+            color: var(--primary-blue);
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--gold-solid);
+            background: var(--gold-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));
+        }
+
+        .hero-date {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 6px;
+            font-weight: 800;
+            margin-top: 10px;
+            color: #222222;
+            text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .invitation-section {
+            position: relative;
+            z-index: 10;
+            margin-top: -10vh; 
+            padding-bottom: 60px;
+        }
+
+        .invite-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            padding: 50px 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+            position: relative;
+            overflow: hidden;
+        }
+
+        .invite-card::before, .invite-card::after {
+            content: ''; position: absolute; width: 30px; height: 30px; border: 1.5px solid var(--gold-solid);
+        }
+        .invite-card::before { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+        .invite-card::after { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+
+        .sec-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .invite-highlight {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .invite-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .signature { margin-top: 20px; }
+        .signature p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;}
+        .signature h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--gold-solid);}
+
+        .event-section {
+            padding: 60px 0;
+            position: relative;
+        }
+
+        .event-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .event-box {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-left: 4px solid var(--gold-solid);
+            padding: 25px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .event-icon {
+            font-size: 2rem;
+            width: 60px;
+            text-align: center;
+            color: var(--gold-solid);
+        }
+
+        .event-details h3 { font-size: 1.5rem; margin-bottom: 5px; color: var(--primary-blue); font-weight: 700;}
+        .event-details p { font-size: 0.95rem; font-weight: 400; line-height: 1.5; color: var(--text-muted);}
+        .event-details strong { color: var(--text-dark); font-weight: 700;}
+
+        .agenda-section { padding: 40px 0 100px; }
+
+        .timeline {
+            position: relative;
+            margin-top: 40px;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px; top: 0; bottom: 0;
+            width: 2px;
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px; top: 5px;
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: var(--gold-solid);
+            box-shadow: 0 0 10px rgba(181, 133, 0, 0.3);
+        }
+
+        .time {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .content {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 15px; left: 50%;
+            transform: translateX(-50%);
+            width: 90%; max-width: 400px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--border-glass);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 25px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #888;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.7rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item i { font-size: 1.2rem; margin-bottom: 4px; }
+        .nav-item:hover, .nav-item:focus, .nav-item.active {
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+            font-weight: 700;
+        }
+
+        .scroll-indicator {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            animation: scrollDown 2s infinite; opacity: 0.8; color: var(--gold-solid);
+        }
+        @keyframes scrollDown {
+            0% { transform: translate(-50%, 0); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translate(-50%, 15px); opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .top-logos { top: 25px; padding: 0 6%; }
+            .logo-ngocanh-img { height: 75px; }
+            .logo-byd-img { height: 45px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 4rem; }
+            .invite-card { padding: 40px 20px; }
+            .event-box { padding: 20px 15px; }
+            
+            .top-logos { top: 20px; padding: 0 20px; }
+            .logo-ngocanh-img { height: 55px; }
+            .logo-byd-img { height: 35px; }
+        }
+    </style>
 </head>
+<body class="locked">
 
-<body>
+    <div class="hero-waiting" id="hero-waiting">
+        <div class="waiting-content">
+            <div class="waiting-sub">LỄ KHAI TRƯƠNG</div>
+            <div class="waiting-title">BYD THÀNH CÔNG<br>CÀ MAU</div>
+            <div class="waiting-date">27.03.2026</div>
+            <div class="waiting-guest" id="guest"></div>
 
-<!-- Nút bật popup -->
-<div class="popup-toggle-btn" id="qcadsGiftBtn">🎁</div>
-
-<!-- Popup chính -->
-<div class="popup-widget" id="qcadsPopup">
-  <div class="popup-form">
-    <span class="close-btn" title="Đóng" tabindex="0">×</span>
-
-    <div class="qcads-popup-grid">
-      <!-- CỘT TRÁI -->
-      <div class="qcads-left">
-        <h2>🔥GIAO DIỆN NÂNG CẤP🔥<br>NÂNG TẦM TRẢI NGHỆM QUÝ KHÁCH HÀNG</h2>
-        <p>XE NGỌC ANH – UY TÍN - CHẤT LƯỢNG - GIÁ TỐT</p>
-
-        <form id="registerForm">
-          <input type="text" name="name" placeholder="Tên của Anh/Chị:*" required />
-          <input type="text" name="phone" placeholder="Số điện thoại:*" required />
-          <input type="text" name="address" placeholder="Địa chỉ liên hệ:*" required />
-          <input type="text" name="car" placeholder="Dòng xe quan tâm:*" required />
-          <input type="text" name="note" placeholder="Yêu cầu khác (nếu có):" />
-          <label><input type="checkbox" required /> Tôi đồng ý với điều khoản của Xe Ngọc Anh</label>
-
-          <div class="form-actions">
-            <button type="submit" id="submitBtn">ĐĂNG KÝ NGAY</button>
-            <a class="dismiss-link" tabindex="0">Bữa khác nha!</a>
-          </div>
-        </form>
-
-        <!-- Vòng quay -->
-        <div id="wheelContainer">
-          <div class="wheel-container">
-            <div class="arrow"></div>
-            <canvas id="wheel" width="300" height="300"></canvas>
-            <div class="center-button" id="spinBtn" tabindex="0">
-              <div class="pointer"></div>
-              <span>Quay</span>
+            <div class="envelope" onclick="openInvite()">
+                <img src="https://quangcaoads2025.github.io/thu-moi/thumoi1.png?v=final" alt="Phong bì">
             </div>
-          </div>
-          <div id="result"></div>
+
+            <div class="open-text">Nhấn vào đây để mở thiệp</div>
         </div>
-
-        <div id="successMessage">
-          <h3>🎉CẢM ƠN Anh/Chị <span id="showName"></span><br>ĐÃ THAM GIA CHƯƠNG TRÌNH😘</h3>
-          <p>MÃ QUÀ TẶNG LÀ: <span id="couponCode"></span></p>
-          <div id="wonValue" class="gift-text"></div>
-          <p>VUI LÒNG CHỤP MÀN HÌNH HOẶC ĐỌC TÊN KHI NHẬN QUÀ TẶNG.</p>
-          <p>🔔 “Voucher giảm giá không quy đổi thành tiền mặt và chỉ áp dụng 01 mã khi mua xe. Mã giảm giá được QuangCaoAds lưu để đối chiếu khi thanh toán.”</p>
-        </div>
-
-        <div class="site-footer">
-          © 2025 Bản quyền thuộc về <strong>QuangCaoAds</strong> | Thiết kế bởi<br><strong>MKT HLAds - Xe Ngọc Anh Cà Mau</strong>
-        </div>
-      </div>
-
-      <!-- CỘT PHẢI -->
-      <div class="qcads-right">
-        <div class="qcads-right-card">
-          <div class="qcads-hotline">
-            <div class="qcads-pill">
-              <div class="qcads-icon">☎</div>
-              <div class="qcads-text">
-                HOTLINE
-                <b>08888 58 200</b>
-              </div>
-            </div>
-          </div>
-
-          <ul>
-            <li><span class="dot">🚀</span><span>XE NGỌC ANH – CHÍNH HÃNG, GIÁ TỐT</span></li>
-            <li><span class="dot">🎁</span><span>Mua xe chuẩn – Giá tốt</span></li>
-            <li><span class="dot">🎁</span><span>Giao tận nhà toàn tỉnh</span></li>
-            <li><span class="dot">🎁</span><span>Quà tặng hấp dẫn – Trả góp duyệt nhanh</span></li>
-            <li><span class="dot">🎁</span><span>Ngọc Anh Thương hiệu uy tính 30 năm</span></li>
-          </ul>
-
-          <div class="qcads-logo">
-            <div class="logo-box">
-              <img src="https://bydthanhcong.vn/wp-content/uploads/2025/12/NGOC-ANH-LOGO-01-2048x1600.png" alt="Xe Ngọc Anh Logo">
-            </div>
-          </div>
-
-          <div class="qcads-right-hot">
-            Hãy để lại thông tin, nhận ngay chương trình khuyến mãi!
-          </div>
-        </div>
-      </div>
     </div>
 
-  </div>
-</div>
+    <div class="flash" id="flash"></div>
 
-<!-- THÔNG BÁO CUSTOM -->
-<div id="qcadsAlert">
-  <div class="qcads-alert-box">
-    <h3>🎁 Thông báo</h3>
-    <p id="qcadsAlertText"></p>
-    <button type="button" id="qcadsAlertOk">Đã hiểu</button>
-  </div>
-</div>
+    <div class="main-invitation" id="main-invitation">
+        <div class="main-invitation-inner">
+            
+            <section class="hero" id="home">
+                <div class="top-logos" data-aos="fade-down" data-aos-duration="1500">
+                    <img class="logo-ngocanh-img" src="https://bydthanhcong.vn/wp-content/uploads/2025/12/NGOC-ANH-LOGO-01-2048x1600.png" alt="Logo Ngọc Anh">
+                    
+                    <img class="logo-byd-img" src="https://bydthanhcong.vn/wp-content/uploads/2019/06/Logo-BYD-do-01.png" alt="Logo BYD Thành Công">
+                </div>
 
-<!-- Confetti -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+                <div data-aos="zoom-out" data-aos-duration="2000">
+                    <div class="hero-logo">BYD THÀNH CÔNG</div>
+                    <h1 class="hero-title">Opening</h1>
+                    <div class="hero-date">27 . 03 . 2026</div>
+                </div>
+                <i class="fa-solid fa-angles-down scroll-indicator"></i>
+            </section>
 
-<script type="text/javascript">
-/* ====== URL WEB APP (EXEC) ====== */
-var QCADS_API_URL = "https://script.google.com/macros/s/AKfycbwBcx5TA08xZfuVeoSzeMzCaoQtxNOLFFHwJG9UH-SfWIPwuw5OQXgwmybEcakWofqB/exec";
+            <section class="invitation-section" id="invite">
+                <div class="container">
+                    <div class="invite-card" data-aos="fade-up" data-aos-duration="1200">
+                        <h2 class="sec-title text-gold">Trân Trọng Kính Mời</h2>
+                        
+                        <div class="invite-highlight">
+                            THAM DỰ LỄ KHAI TRƯƠNG<br>SHOWROOM 4S<br>BYD THÀNH CÔNG CÀ MAU
+                        </div>
 
-/* ===== THÔNG BÁO CUSTOM ===== */
-function qcadsShowAlert(text){
-  var box = document.getElementById('qcadsAlert');
-  var t = document.getElementById('qcadsAlertText');
-  if (!box || !t) return;
-  t.innerText = text || '';
-  box.style.display = 'flex';
-}
-function qcadsCloseAlert(){
-  var box = document.getElementById('qcadsAlert');
-  if (!box) return;
-  box.style.display = 'none';
-}
-(function(){
-  var ok = document.getElementById('qcadsAlertOk');
-  if (ok) ok.addEventListener('click', qcadsCloseAlert);
-})();
+                        <p class="invite-text">
+                            Sự hiện diện của Quý khách hàng và Đối tác là niềm vinh hạnh to lớn, đánh dấu bước chuyển mình quan trọng của chúng tôi.<br><br>
+                            Kính mời Quý vị đến chung vui, nâng ly chúc mừng và trải nghiệm không gian công nghệ xe điện tương lai tại Showroom mới.
+                        </p>
+                        <div class="signature">
+                            <p>CHỦ TỊCH HĐTV</p>
+                            <h4>Nguyễn Thị Ngọc Anh</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-/* ====== POPUP OPEN/CLOSE ====== */
-window.showPopup = function () {
-  var popup = document.getElementById('qcadsPopup') || document.querySelector('.popup-widget');
-  if (!popup) return;
-  popup.style.display = 'flex';
+            <section class="event-section" id="event">
+                <div class="container">
+                    <div class="event-grid">
+                        <div class="event-box" data-aos="fade-right">
+                            <div class="event-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="event-details">
+                                <h3 class="serif">Thời Gian</h3>
+                                <p><strong>08:00 - 10:00 Sáng</strong><br>Thứ Sáu, ngày 27 tháng 03 năm 2026</p>
+                            </div>
+                        </div>
+                        
+                        <div class="event-box" data-aos="fade-left">
+                            <div class="event-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="event-details">
+                                <h3 class="serif">Địa Điểm</h3>
+                                <p><strong>Showroom BYD Thành Công</strong><br>109 Lý Thường Kiệt, P. Tân Thành, Cà Mau</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  if (typeof confetti !== 'undefined') {
-    confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
-    setTimeout(function () {
-      confetti({ particleCount: 100, spread: 80, origin: { y: 0.6 } });
-    }, 500);
-  }
-};
-window.qcadsHidePopup = function () {
-  var popup = document.getElementById('qcadsPopup') || document.querySelector('.popup-widget');
-  if (!popup) return;
-  popup.style.display = 'none';
-};
+            <section class="agenda-section" id="agenda">
+                <div class="container">
+                    <h2 class="sec-title text-gold" style="text-align: center;" data-aos="fade-up">Chương Trình</h2>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="time">08:00 - 09:00</div>
+                            <div class="content">Đón khách & Tiệc trà (Teabreak)</div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="time">09:00 - 09:30</div>
+                            <div class="content">Tuyên bố lý do & Giới thiệu đại biểu</div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="time">09:30 - 10:00</div>
+                            <div class="content">Phát biểu của Ban Lãnh Đạo</div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="time">10:00 - 10:15</div>
+                            <div class="content">Nghi thức cắt băng khai trương</div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="time">10:15 - 10:20</div>
+                            <div class="content">Khai tiệc & Chụp hình lưu niệm</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-/* ====== VÒNG QUAY (GIỮ NGUYÊN) ====== */
-var canvas = document.getElementById("wheel");
-var ctx = canvas.getContext("2d");
-var size = canvas.width;
-var center = size / 2;
+            <nav class="bottom-nav">
+                <a href="#home" class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="#invite" class="nav-item">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>Thư mời</span>
+                </a>
+                <a href="#event" class="nav-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Sự kiện</span>
+                </a>
+                <a href="#agenda" class="nav-item">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Lịch trình</span>
+                </a>
+            </nav>
 
-var segments = [
-  "BỘ 06 LY<br>THỦY TINH<br>CAO CẤP",
-  "VALI<br>CAO CẤP<br>YAMAHA",
-  "TAI NGHE<br>AIRPOOD 4",
-  "DÙ<br>CẦM TAY",
-  "QUẠT PIN<br>CẦM TAY",
-  "VOUCHER<br>3.000.000Đ",
-  "VOUCHER<br>5.000.000Đ"
-];
+        </div>
+    </div>
 
-var colors = [
- ["#A8E6CF","#56C596"],
- ["#4FACFE","#0052D4"],
- ["#FF9A9E","#F6416C"],
- ["#FFE259","#FFA751"],
- ["#43E97B","#11998E"],
- ["#667EEA","#764BA2"],
- ["#ff5ebc","#c7007a"]
-];
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        let particleInterval = setInterval(()=>{
+            let p = document.createElement("div");
+            p.className = "particle";
+            p.style.left = Math.random() * 100 + "vw";
+            document.body.appendChild(p);
+            setTimeout(()=> p.remove(), 6000);
+        }, 200);
 
-var arc = (2 * Math.PI) / segments.length;
-var spinAngle = 0, spinning = false;
-
-/* ====== JSONP CALL (CHỐNG CORS) ====== */
-function qcadsJsonp(url, params, timeoutMs){
-  timeoutMs = timeoutMs || 12000;
-  return new Promise(function(resolve, reject){
-    var cbName = "qcads_cb_" + Date.now() + "_" + Math.floor(Math.random()*100000);
-    params = params || {};
-    params.callback = cbName;
-
-    var qs = [];
-    for (var k in params) {
-      if (!params.hasOwnProperty(k)) continue;
-      qs.push(encodeURIComponent(k) + "=" + encodeURIComponent(String(params[k])));
-    }
-
-    var script = document.createElement("script");
-    script.src = url + (url.indexOf("?") >= 0 ? "&" : "?") + qs.join("&");
-
-    var timer = setTimeout(function(){
-      cleanup();
-      reject(new Error("timeout"));
-    }, timeoutMs);
-
-    window[cbName] = function(data){
-      cleanup();
-      resolve(data);
-    };
-
-    function cleanup(){
-      clearTimeout(timer);
-      if (script && script.parentNode) script.parentNode.removeChild(script);
-      try { delete window[cbName]; } catch(e){ window[cbName] = undefined; }
-    }
-
-    script.onerror = function(){
-      cleanup();
-      reject(new Error("network"));
-    };
-
-    document.body.appendChild(script);
-  });
-}
-
-function drawWheel() {
-  for (var i = 0; i < segments.length; i++) {
-    var angle = i * arc;
-    var grad = ctx.createLinearGradient(0, 0, size, size);
-    grad.addColorStop(0, colors[i][0]);
-    grad.addColorStop(1, colors[i][1]);
-    ctx.fillStyle = grad;
-
-    ctx.beginPath();
-    ctx.moveTo(center, center);
-    ctx.arc(center, center, center, angle, angle + arc, false);
-    ctx.fill();
-
-    ctx.save();
-    ctx.translate(center, center);
-    ctx.rotate(angle + arc / 2);
-    ctx.fillStyle = "white";
-    ctx.font = "bold 16px sans-serif";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-
-    var lines = segments[i].split("<br>");
-    var lineHeight = 18;
-    var textRadius = center - 45;
-
-    for (var j = 0; j < lines.length; j++) {
-      var lineY = (j - (lines.length - 1) / 2) * lineHeight;
-      ctx.fillText(lines[j].trim(), textRadius, lineY);
-    }
-    ctx.restore();
-  }
-}
-drawWheel();
-
-/* ====== XIN QUÀ TỪ API (ĐÃ TRỪ KHO TRÊN SHEET) ====== */
-function qcadsAllocPrizeFromApi() {
-  var form = document.getElementById("registerForm");
-  var phone = form && form.elements["phone"] ? form.elements["phone"].value.trim() : "";
-
-  var addressInput = document.querySelector('input[name="address"]');
-  var carInput = document.querySelector('[name="car"]');
-  var noteInput = document.querySelector('input[name="note"]');
-
-  var params = {
-    action: "alloc",
-    phone: phone,
-    name: window.pendingUserName || "",
-    address: addressInput ? addressInput.value.trim() : "",
-    car: carInput ? carInput.value.trim() : "",
-    note: noteInput ? noteInput.value.trim() : "",
-    coupon: window.pendingCouponCode || ""
-  };
-
-  return qcadsJsonp(QCADS_API_URL, params, 12000);
-}
-
-/* ====== QUAY: API -> QUAY ĐÚNG Ô -> HIỆN KẾT QUẢ ====== */
-function spin() {
-  if (spinning) return;
-  spinning = true;
-
-  qcadsAllocPrizeFromApi()
-    .then(function(resp){
-      if (!resp || resp.success !== true) {
-        spinning = false;
-        qcadsShowAlert((resp && resp.message) ? resp.message : "Lỗi kết nối kho quà (API).");
-        return;
-      }
-
-      // prize_id từ sheet (0..4) phải khớp index segments
-      var selectedIndex = Number(resp.prize_id);
-      if (!isFinite(selectedIndex) || selectedIndex < 0 || selectedIndex >= segments.length) {
-        spinning = false;
-        qcadsShowAlert("Dữ liệu prize_id không hợp lệ.");
-        return;
-      }
-
-      var segmentDegree = 360 / segments.length;
-      var segmentCenterDegree = selectedIndex * segmentDegree + segmentDegree / 2;
-      var spins = Math.floor(Math.random() * 4 + 4);
-      var finalDegree = spins * 360 + (360 + 270 - segmentCenterDegree) % 360;
-      var finalRad = finalDegree * Math.PI / 180;
-      var duration = 4000;
-      var start = null;
-
-      function rotateWheel(timestamp) {
-        if (!start) start = timestamp;
-        var progress = timestamp - start;
-        var easing = 1 - Math.pow(1 - progress / duration, 3);
-        spinAngle = finalRad * easing;
-
-        ctx.clearRect(0, 0, size, size);
-        ctx.save();
-        ctx.translate(center, center);
-        ctx.rotate(spinAngle);
-        ctx.translate(-center, -center);
-        drawWheel();
-        ctx.restore();
-
-        if (progress < duration) {
-          requestAnimationFrame(rotateWheel);
-        } else {
-          window.pendingSegment = segments[selectedIndex];
-
-          document.getElementById("result").innerText = "🎉 Bạn trúng: " + window.pendingSegment;
-          spinning = false;
-          window.showSuccessAfterSpin();
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+        if(name){
+            document.getElementById("guest").innerText = "Kính mời: " + name;
         }
-      }
 
-      requestAnimationFrame(rotateWheel);
-    })
-    .catch(function(){
-      spinning = false;
-      qcadsShowAlert("Lỗi kết nối kho quà (API). Vui lòng thử lại.");
-    });
-}
+        function fireConfetti() {
+            var duration = 3000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 10000, colors: ['#b58500', '#e6c200', '#004080', '#ffffff'] };
 
-/* ====== BOOT ====== */
-function qcadsBoot() {
-  var closeBtn = document.querySelector('.popup-form .close-btn');
-  var dismissLink = document.querySelector('.popup-form .dismiss-link');
-  var form = document.getElementById('registerForm');
-  var wheelContainer = document.getElementById('wheelContainer');
-  var spinBtn = document.getElementById('spinBtn');
-  var giftBtn = document.getElementById('qcadsGiftBtn');
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
 
-  if (giftBtn) {
-    giftBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      window.showPopup();
-    }, true);
-  }
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+                var particleCount = 50 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
 
-  function hidePopup(){ window.qcadsHidePopup(); }
-  if (closeBtn) closeBtn.addEventListener('click', hidePopup);
-  if (dismissLink) dismissLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    hidePopup();
-  });
+        function startMainParticles() {
+            setInterval(() => {
+                let p = document.createElement("div");
+                p.className = "main-particle";
+                p.style.left = Math.random() * 100 + "vw";
+                p.style.animationDuration = (Math.random() * 3 + 4) + "s";
+                document.body.appendChild(p);
+                setTimeout(()=> p.remove(), 7000);
+            }, 300);
+        }
 
-  function isPhoneValid(phone){ return /^0\d{9}$/.test(phone); }
+        function openInvite(){
+            const flash = document.getElementById("flash");
+            flash.style.opacity = 1;
 
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+            setTimeout(()=>{ 
+                flash.style.opacity = 0; 
+            }, 300);
 
-      var name = form.elements['name'].value.trim();
-      var phone = form.elements['phone'].value.trim();
+            document.getElementById("hero-waiting").classList.add("hide");
+            
+            clearInterval(particleInterval);
 
-      if (!isPhoneValid(phone)) {
-        qcadsShowAlert('Số điện thoại không hợp lệ (phải có 10 số và bắt đầu bằng 0).');
-        form.elements['phone'].focus();
-        return;
-      }
+            fireConfetti();
 
-      var couponCode = 'NA' + Math.floor(100000 + Math.random() * 900000);
-      window.pendingUserName = name;
-      window.pendingCouponCode = couponCode;
+            setTimeout(()=>{
+                document.body.classList.remove("locked"); 
+                document.getElementById("main-invitation").classList.add("active");
+                
+                AOS.init({
+                    duration: 1000,
+                    once: true,
+                    offset: 50
+                });
 
-      form.style.display = 'none';
-      wheelContainer.style.display = 'block';
-      document.getElementById('result').innerText = '';
-    });
-  }
+                startMainParticles();
+            }, 600);
+        }
 
-  window.showSuccessAfterSpin = function () {
-    var successMessage = document.getElementById('successMessage');
-    wheelContainer.style.display = 'none';
-    successMessage.style.display = 'block';
+        const sections = document.querySelectorAll("section");
+        const navItems = document.querySelectorAll(".nav-item");
 
-    document.getElementById('showName').innerText = window.pendingUserName || '';
-    document.getElementById('couponCode').innerText = window.pendingCouponCode || '';
-    document.getElementById('wonValue').innerHTML = (window.pendingSegment || '').replace(/<br\s*\/?>/gi, ' ');
-  };
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute("id");
+                }
+            });
 
-  if (spinBtn) spinBtn.addEventListener('click', spin);
-
-  /* AUTO HIỆN POPUP */
-  window.showPopup();
-}
-
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-  qcadsBoot();
-} else {
-  document.addEventListener('DOMContentLoaded', qcadsBoot);
-}
-</script>
-
-<script type="text/javascript">
-function qcadsHasPopupWidget(el) {
-  while (el && el !== document) {
-    if (el.className && typeof el.className === 'string' && el.className.indexOf('popup-widget') !== -1) return true;
-    el = el.parentNode;
-  }
-  return false;
-}
-var qcadsPopup = document.querySelector('.popup-widget');
-
-document.addEventListener('contextmenu', function (e) {
-  if (qcadsHasPopupWidget(e.target)) e.preventDefault();
-});
-document.addEventListener('keydown', function (e) {
-  if (!qcadsHasPopupWidget(e.target)) return;
-
-  var key = (e.key || '').toLowerCase();
-  var isCtrl = !!e.ctrlKey;
-  var forbidden = { u:1, s:1, c:1, x:1, i:1 };
-
-  if ((isCtrl && forbidden[key]) || e.key === 'F12') e.preventDefault();
-});
-if (qcadsPopup) {
-  qcadsPopup.style.userSelect = 'none';
-  qcadsPopup.addEventListener('copy', function (e) { e.preventDefault(); });
-  qcadsPopup.addEventListener('cut', function (e) { e.preventDefault(); });
-}
-</script>
-
+            navItems.forEach(item => {
+                item.classList.remove("active");
+                if (item.getAttribute("href").includes(current)) {
+                    item.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
